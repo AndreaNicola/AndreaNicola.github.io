@@ -37,6 +37,8 @@ plugins:
 collections:
   privacy_policies:
     output: true
+  arasaac_translator_guides:
+    output: true
 
 # Exclude from processing.
 # The following items will not be processed, by default.
