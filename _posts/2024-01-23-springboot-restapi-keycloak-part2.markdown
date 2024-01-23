@@ -1,7 +1,7 @@
 ---
 layout: post
-title: "Spring Boot REST and Keycloak - Part 1"
-date: 2024-01-11 15:00:00 +0100
+title: "Spring Boot REST and Keycloak - Part 2"
+date: 2024-01-23 08:00:00 +0100
 excerpt_separator: <!--more-->
 ---
 
@@ -304,3 +304,9 @@ Keycloak will respond with a new set of tokens:
 In this article we saw how to secure a Spring Boot REST API with Keycloak. We saw how to configure Keycloak and how to
 use the Spring Boot Keycloak Spring Security Adapter to secure our API. We also saw how to use the access_token to call
 our API and how to refresh the access_token when it expires.
+
+The full coded example can be found on my GitHub :-D
+
+https://github.com/AndreaNicola/springboot-keycloak-api-integration.git
+
+Bye!!
