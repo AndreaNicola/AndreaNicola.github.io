@@ -6,17 +6,18 @@ excerpt_separator: <!--more-->
 ---
 Git è un sistema di controllo delle versioni (VCS) che consente di salvare e tenere traccia delle modifiche a file nel
 tempo senza sovrascrivere gli snapshot precedenti. È ampiamente utilizzato dai programmatori per collaborare su
-progetti. A differenza del suo principale concorrente, SVN, Git implementa anche un sistema di flusso di lavoro
-distribuito. Ciò significa che ogni sviluppatore che lavora con Git ha una copia locale dell’intero repository. Git
-consente anche di lavorare in modo asincrono senza una connessione costante al repository centrale.
+progetti. 
 
 <!--more-->
 
+A differenza del suo principale concorrente, SVN, Git implementa anche un sistema di flusso di lavoro
+distribuito. Ciò significa che ogni sviluppatore che lavora con Git ha una copia locale dell’intero repository. Git
+consente anche di lavorare in modo asincrono senza una connessione costante al repository centrale.
 
 ## Installazione di Git
 
 Puoi installare Git sui sistemi operativi più comuni come Windows, Mac e Linux. In realtà, su molte macchine Mac e
-Linux, Git è già installato di default. Per verificare se hai già Git installato, apri un terminale e esegui il seguente
+Linux, Git è già installato di default. Per verificare se hai già Git installato, apri un terminale ed esegui il seguente
 comando:
 
 ```bash
