@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Piccola guida a Git"
-date: 2023-11-28 09:19:24 +0100
+date: 2024-04-05 12:30:00 +0200
 excerpt_separator: <!--more-->
 ---
 Git è un sistema di controllo delle versioni (VCS) che consente di salvare e tenere traccia delle modifiche a file nel
