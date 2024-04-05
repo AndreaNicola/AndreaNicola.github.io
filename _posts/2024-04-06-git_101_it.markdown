@@ -4,18 +4,16 @@ title: "Piccola guida a Git"
 date: 2023-11-28 09:19:24 +0100
 excerpt_separator: <!--more-->
 ---
-
-## Piccola guida a Git
-
-### Cos’è Git?
-
 Git è un sistema di controllo delle versioni (VCS) che consente di salvare e tenere traccia delle modifiche a file nel
 tempo senza sovrascrivere gli snapshot precedenti. È ampiamente utilizzato dai programmatori per collaborare su
 progetti. A differenza del suo principale concorrente, SVN, Git implementa anche un sistema di flusso di lavoro
 distribuito. Ciò significa che ogni sviluppatore che lavora con Git ha una copia locale dell’intero repository. Git
 consente anche di lavorare in modo asincrono senza una connessione costante al repository centrale.
 
-### Installazione di Git
+<!--more-->
+
+
+## Installazione di Git
 
 Puoi installare Git sui sistemi operativi più comuni come Windows, Mac e Linux. In realtà, su molte macchine Mac e
 Linux, Git è già installato di default. Per verificare se hai già Git installato, apri un terminale e esegui il seguente
@@ -27,7 +25,7 @@ $ git version
 
 Se Git è installato, vedrai la versione corrente.
 
-#### Installazione su Windows
+### Installazione su Windows
 
 Per installare Git su Windows, puoi scaricare l’installer dal sito ufficiale di
 Git: [https://git-scm.com/](https://git-scm.com/).
@@ -35,14 +33,14 @@ Git: [https://git-scm.com/](https://git-scm.com/).
 Questa versione di Git include strumenti GUI integrati per il commit (git-gui). Esistono anche
 molte altre opzioni di terze parti o plugin IDE che migliorano l’esperienza.
 
-#### Configurazione di Git
+### Configurazione di Git
 
 Dopo aver installato Git, puoi configurarlo con il comando ```git config```. Git supporta opzioni a diversi livelli come
 sistema, globale, locale, worktree o file. Le impostazioni di sistema sono a livello di sistema e si applicano a
 tutti gli utenti e ai loro repository. Le impostazioni globali si riferiscono alle impostazioni specifiche
 dell’utente. La configurazione locale è specifica per un singolo repository.
 
-### Comandi di Base di Git
+## Comandi di Base di Git
 
 Ecco alcuni comandi di base che userai frequentemente con Git:
 
@@ -55,12 +53,12 @@ Ecco alcuni comandi di base che userai frequentemente con Git:
 - ```git status```: Mostra lo stato dei tuoi file.
 - ```git log```: Visualizza la cronologia dei commit.
 
-### Branching e Merging
+## Branching e Merging
 
 Il branching in Git è un concetto fondamentale che ti permette di gestire le diverse linee di sviluppo all’interno del
 tuo repository. Ecco alcuni punti chiave:
 
-#### Creazione di un Branch
+### Creazione di un Branch
 
 Un branch è una copia separata del tuo codice. Puoi crearne uno nuovo per sviluppare nuove funzionalità o risolvere
 problemi senza influenzare il ramo principale (di solito chiamato master o main).
@@ -76,12 +74,12 @@ Ad esempio, per creare un branch chiamato “feature-login”:
 git checkout -b feature-login
 ```
 
-#### Lavorare su un Branch
+### Lavorare su un Branch
 
 Una volta creato un branch, puoi iniziare a lavorare su di esso. Tutti i commit che fai saranno specifici per quel
 branch. Puoi modificare i file, fare commit e spingere le modifiche solo per quel branch.
 
-#### Switch tra Branches
+### Switch tra Branches
 
 Per passare da un branch all’altro, usa il comando:
 
@@ -92,33 +90,33 @@ git checkout <nome_del_branch>
 Ad esempio, per tornare al branch principale:
 
 ```bash 
-git checkout master  ## Vai al branch principale
+git checkout master  # Vai al branch principale
 ```
 
 A volte il ramo principale può essere chiamato “main” invece di “master” a seconda della tua configurazione.
 
-#### Merge dei Branches
+### Merge dei Branches
 
 Una volta completato il lavoro su un branch (ad esempio, la tua nuova funzionalità), puoi unire le modifiche al branch
 principale.
 Usa il comando git merge per combinare le modifiche da un branch all’altro:
 
 ``` bash
-git merge feature-login  ## Unisci le modifiche dal branch "feature-login"
+git merge feature-login  # Unisci le modifiche dal branch "feature-login"
 ```
 
-#### Risolvere Conflitti
+### Risolvere Conflitti
 A volte, durante il merge, potrebbero verificarsi conflitti tra le modifiche nei due branch.
 Git ti mostrerà i conflitti nei file e dovrai risolverli manualmente.
 Dopo aver risolto i conflitti, fai un nuovo commit per confermare le modifiche.
 
-#### Pulizia dei Branches
+### Pulizia dei Branches
 Una volta completato il merge di un branch, puoi eliminare il branch temporaneo:
 ```bash 
-git branch -d feature-login ## Elimina il branch "feature-login"
+git branch -d feature-login # Elimina il branch "feature-login"
 ```
 
-#### Best Practices
+### Best Practices
 - Crea un branch per ogni nuova funzionalità o correzione di bug. 
 - Mantieni il branch principale sempre stabile e funzionante.
 - Fai spesso il merge dei cambiamenti dal branch principale nel tuo branch di lavoro per evitare conflitti futuri.
@@ -127,7 +125,7 @@ In breve, il branching in Git ti consente di lavorare in modo isolato su diverse
 modifiche in modo controllato. È uno strumento potente per organizzare il tuo flusso di lavoro e collaborare con altri
 sviluppatori.
 
-### Risorse Aggiuntive
+## Risorse Aggiuntive
 
 - [Baeldung Git Guide](https://www.baeldung.com/ops/git-guide): Una guida pratica su Git con esempi e spiegazioni
   dettagliate.
